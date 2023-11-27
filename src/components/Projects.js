@@ -1,8 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import vocab from "../assets/img/vocab.svg";
+import connected from "../assets/img/connected.svg";
+import subject from "../assets/img/subject_specific.svg";
+import dictionary from "../assets/img/dictionary.svg";
+import AI from "../assets/img/AI.svg"
+import customized from "../assets/img/curriculum.svg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -13,32 +16,32 @@ export const Projects = () => {
     {
       title: "Vocabulary Size Estimation",
       description: "Estimates your terminology size",
-      imgUrl: projImg1,
+      imgUrl: vocab,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Connected Words",
+      description: "Shows the relationship between terminologies. Get structure to your learning journey",
+      imgUrl: connected,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Customized Learning Curriculum",
+      description: "Based on your evaluation, our system provide you the perfect learning program",
+      imgUrl: customized,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Personal Dictionary",
+      description: "Get examples for your words, learn pronunciation, and put them in your own dictionary",
+      imgUrl: dictionary,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Subject Specific",
+      description: "From Math, Linguistics, Science, Geography, our library has everything!",
+      imgUrl: subject,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "AI Assistant",
+      description: "AI assistant is there for your if you have any questions!",
+      imgUrl: AI,
     },
   ];
 
@@ -80,10 +83,10 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>More coming... Stay tuned</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>More coming... Stay tuned</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
