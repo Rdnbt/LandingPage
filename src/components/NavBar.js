@@ -58,7 +58,7 @@ export const NavBar = () => {
                 <a href="https://www.tiktok.com/@linguaLive_EN" target="_blank" rel="noopener noreferrer">
                   <img src={navIcon2} alt="Icon 2" />
                 </a>
-                <a href="https://www.isntagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                   <img src={navIcon3} alt="Icon 3" />
                 </a>
               </div>
