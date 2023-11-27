@@ -52,9 +52,15 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.youtube.com/@LinguaLive2023" target="_blank" rel="noopener noreferrer">
+                  <img src={navIcon1} alt="Icon 1" />
+                </a>
+                <a href="https://www.tiktok.com/@linguaLive_EN" target="_blank" rel="noopener noreferrer">
+                  <img src={navIcon2} alt="Icon 2" />
+                </a>
+                <a href="https://www.isntagram.com" target="_blank" rel="noopener noreferrer">
+                  <img src={navIcon3} alt="Icon 3" />
+                </a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Get Early Release!</span></button>
