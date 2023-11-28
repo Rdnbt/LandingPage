@@ -54,7 +54,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Subject Specific Vocabulary Learning</h2>
-                <p>A whole new experience in learning. Find words that are similar to each other. Beautiful visualization of network of words and termonologies. Program tailored to your need</p>
+                <p>A whole new experience in learning...</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -82,8 +82,18 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>More coming... Stay tuned</p>
+                    <Tab.Pane eventKey="second">
+                      <Row>
+                        <Col>
+                          <iframe src="https://www.tiktok.com/embed/7286835638459026695" width="100%" height="500px" frameborder="0"></iframe>
+                        </Col>
+                        <Col>
+                          <iframe src="https://www.tiktok.com/embed/7286397085790850311" width="100%" height="500px" frameborder="0"></iframe>
+                        </Col>
+                        <Col>
+                          <iframe src="https://www.tiktok.com/embed/7285623742254894337" width="100%" height="500px" frameborder="0"></iframe>
+                        </Col>
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>More coming... Stay tuned</p>
@@ -97,5 +107,5 @@ export const Projects = () => {
       </Container>
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
-  )
-}
+  );
+};
