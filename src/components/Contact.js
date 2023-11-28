@@ -43,7 +43,7 @@ const handleSubmit = async (e) => {
 
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    setStatus({ success: result.code == 200, message: result.code == 200 ? 'Message sent successfully' : 'Something went wrong, please try again later.' });
+    setStatus({ success: result.code === 200, message: result.code === 200 ? 'Message sent successfully' : 'Something went wrong, please try again later.' });
   } catch (error) {
     setStatus({ success: false, message: 'Network error, please try again later.' });
   } finally {

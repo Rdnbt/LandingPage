@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/lingualive_text.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import navIcon3 from '../assets/img/lar.svg';
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -58,7 +58,7 @@ export const NavBar = () => {
                 <a href="https://www.tiktok.com/@linguaLive_EN" target="_blank" rel="noopener noreferrer">
                   <img src={navIcon2} alt="Icon 2" />
                 </a>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://l2j7emtnlry.larksuite.com/share/base/form/shrusBloxGlwdWKn3Ss45Eq0Fre" target="_blank" rel="noopener noreferrer">
                   <img src={navIcon3} alt="Icon 3" />
                 </a>
               </div>
