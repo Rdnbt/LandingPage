@@ -3,6 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import db from './firebase'; // Import the Firestore database
+import { collection, addDoc } from 'firebase/firestore';
+
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -23,33 +26,22 @@ export const Contact = () => {
       })
   }
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setButtonText("Sending...");
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setButtonText("Sending...");
-
-  try {
-    let response = await fetch("https://script.google.com/macros/s/AKfycbxn70dufuzvHTnNZeXdYk-0h8BYy7J3sGWFJyj0otjsBMRwtrNci1kpKfSyCgk86BdCmA/exec", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
+    try {
+      // Add a new document in collection "contacts" using the new modular syntax
+      await addDoc(collection(db, "contacts"), formDetails);
+      setFormDetails(formInitialDetails);
+      setStatus({ success: true, message: 'Message sent successfully' });
+    } catch (error) {
+      console.error("Error adding document: ", error);
+      setStatus({ success: false, message: 'Error sending message, please try again later.' });
+    } finally {
+      setButtonText("Send");
     }
-
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    setStatus({ success: result.code === 200, message: result.code === 200 ? 'Message sent successfully' : 'Something went wrong, please try again later.' });
-  } catch (error) {
-    setStatus({ success: false, message: 'Network error, please try again later.' });
-  } finally {
-    setButtonText("Send");
-  }
-};
+  };
 
 
   return (

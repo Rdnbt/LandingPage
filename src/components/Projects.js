@@ -85,15 +85,27 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">
                       <Row>
                         <Col>
-                          <iframe src="https://www.tiktok.com/embed/7286835638459026695" width="100%" height="500px" frameborder="0"></iframe>
+                          <iframe src="https://www.tiktok.com/embed/v2/7286835638459026695" width="100%" height="500px" frameborder="0" allowfullscreen></iframe>
                         </Col>
                         <Col>
-                          <iframe src="https://www.tiktok.com/embed/7286397085790850311" width="100%" height="500px" frameborder="0"></iframe>
+                          <iframe src="https://www.tiktok.com/embed/v2/7286397085790850311" width="100%" height="500px" frameborder="0" allowfullscreen></iframe>
                         </Col>
                         <Col>
-                          <iframe src="https://www.tiktok.com/embed/7285623742254894337" width="100%" height="500px" frameborder="0"></iframe>
+                          <iframe src="https://www.tiktok.com/embed/v2/7285623742254894337" width="100%" height="500px" frameborder="0" allowfullscreen></iframe>
                         </Col>
                       </Row>
+                      <Row>
+                      <Col>
+                          <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/Qk0AqsXx0Ug"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                          </iframe>
+                        </Col>
+                        </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>More coming... Stay tuned</p>
