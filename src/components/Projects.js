@@ -13,15 +13,15 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
   const projects = [
+        {
+      title: "Subject Specific",
+      description: "From Math, Linguistics, Science, Geography, our library has everything!",
+      imgUrl: subject,
+    },
     {
       title: "Vocabulary Size Estimation",
       description: "Estimates your terminology size",
       imgUrl: vocab,
-    },
-    {
-      title: "Connected Words",
-      description: "Shows the relationship between terminologies. Get structure to your learning journey",
-      imgUrl: connected,
     },
     {
       title: "Customized Learning Curriculum",
@@ -29,14 +29,14 @@ export const Projects = () => {
       imgUrl: customized,
     },
     {
+      title: "Connected Words",
+      description: "Shows the relationship between terminologies. Get structure to your learning journey",
+      imgUrl: connected,
+    },
+    {
       title: "Personal Dictionary",
       description: "Get examples for your words, learn pronunciation, and put them in your own dictionary",
       imgUrl: dictionary,
-    },
-    {
-      title: "Subject Specific",
-      description: "From Math, Linguistics, Science, Geography, our library has everything!",
-      imgUrl: subject,
     },
     {
       title: "AI Assistant",

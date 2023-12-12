@@ -64,7 +64,12 @@ export const Banner = () => {
               </h1>
 
               <p>Your very own professional English Learning App</p>
-              <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+              <button 
+                onClick={() => window.location.href = 'https://rdnbt.github.io/deploynment'}
+                style={{ fontSize: '45px' }}>
+                Try our MVP! <ArrowRightCircle size={45} />
+              </button>
+
             </div>
           }
         </TrackVisibility>
